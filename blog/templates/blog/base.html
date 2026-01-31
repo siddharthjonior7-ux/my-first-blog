@@ -12,11 +12,9 @@
         <h1><a href="/">Django Girls Blog</a></h1>
 
         {% if user.is_authenticated %}
-            <p>Hello {{ user.username }}!</p>
-
             <a href="{% url 'post_new' %}">New post</a>
-            <a href="{% url 'logout' %}">Logout</a>
         {% endif %}
+
     </header>
 
     <main>
